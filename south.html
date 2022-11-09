@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE HISTORY</title>
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="./assets/script.js"></script>
+</head>
+
+<body>
+    <!-- Phan header-->
+    <div id="header" class="flex">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+        </div>
+        <!--Begin:Nav-->
+        <div class="flex-1">
+            <div id="search-input" class="flex h-full justify-end items-center none" >
+                <div class="relative mr-20">
+                    <input class="input-search" placeholder="Search" onkeyup="handleSearch(event)"  />
+                    <div class="search-suggest none">
+                    </div>
+             </div>
+            </div>
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="EAST.html">EAST</a></li>
+                <li><a href="west.html">WEST</a></li>
+                <li><a href="north.html">NORTH</a></li>
+                <li><a href="south.html">SOUTH</a></li>
+                <li><a href="central.html">CENTRAL</a></li>
+
+                <!--Navigation more-->
+                <li>
+                    <a href="">
+                        More
+                        <i class=" nav-arrow-down  fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="booktour.html">Book Tour</a></li>
+                        <li><a href="hottour.html">Hot Tour</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--End:Nav-->
+        <!--Begin:Search button-->
+        <div class="search-btn" onclick="handleShowSearch()">
+            <!-- <i class=" search-icon ti-search"></i> -->
+            <i class="search-icon fa-sharp fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class= "row mt-10">
+           <div class ="col-4 col-sm-6 col-md-4 image image-1 ">
+              <div class="item">
+                 <img src="./assets/img/image south earth/Patagonia-62_(26027075260).jpg" alt="" class="kyquan1">
+                 <h3>Torres del Paine National Park </h3>
+                 <p>Torres del Paine National Park is a national park encompassing mountains, glaciers, lakes, and rivers in southern Chilean Patagonia.</p>
+                 <div style="text-align: right;">
+                    <a href="Torres del Paine National Park of CHILE.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image image-1 ">
+              <div class="item">
+                 <img src="./assets/img/image south earth/img-australia/Interior_of_Sydney_Opera_House_Concert_Hall_during_performance.jpg" alt="" class="kyquan1">
+                 <h3>The Sydney Opera House</h3>
+                 <p>The Sydney Opera House is a multi-venue performing arts centre in Sydney.</p>
+                 <div style="text-align: right;">
+                    <a href="Sydney Opera House of Australia.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image image-1 ">
+              <div class="item">
+                 <img src="./assets/img/image south earth/img-australia mountains/Three_Sisters.png" alt="" class="kyquan1">
+                 <h3>Greater Blue Mountains Area</h3>
+                 <p>The Greater Blue Mountains Area is a World Heritage Site located in the Blue Mountains of New South Wales, Australia.</p>
+                 <div style="text-align: right;">
+                    <a href="Greater Blue Mountains Area of Australia.html"style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image  ">
+              <div class="item">
+                 <img src="./assets/img/image south earth/imgs-Chile/Rano-Raraku-from-South.jpg" alt="" class="kyquan1">
+                 <h3>Rano Raraku</h3>
+                 <p>Rano Raraku is a volcanic crater formed of consolidated volcanic ash, or tuff, and located on the lower slopes of Terevaka. </p>
+                 <div style="text-align: right;">
+                    <a href="Rano Raraku of Chile.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image ">
+              <div class="item">
+                 <img src="./assets/img/image south earth/El Fuerte de Samaipata of Bolivia/Samaipata.jpg" alt="" class="kyquan1">
+                 <h3>El Fuerte de Samaipata</h3>
+                 <p>El Fuerte de Samaipata or Fort Samaipata, also known simply as "El Fuerte"</p>
+                 <div style="text-align: right;">
+                    <a href="El Fuerte de Samaipata of Bolivia.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image  ">
+              <div class="item">
+                 <img src="./assets/img/image south earth/Iguaçu National Park of Brazil/Cataratas.jpg" alt="" class="kyquan1">
+                 <h3>Iguaçu National Park</h3>
+                 <p>Iguaçu National Park is a national park in Paraná State, Brazil. It comprises a total area of 185,262.5 hectares.</p>
+                 <div style="text-align: right;">
+                    <a href="Iguaçu National Park of Brazil.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <!-- <div class ="col-4 col-sm-6 col-md-4 image ">
+              <div class="item">
+                 <img src="./assets/img/kyquan1.jpg" alt="" class="kyquan1">
+                 <h3>ky quan 1</h3>
+                 <p>Đây là kỳ quan 1 nổi tiếng Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, et?</p>
+                 <div style="text-align: right;">
+                    <a href="EAST.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div> -->
+           
+        </div>
+      </div>
+    <!--Footer Section Begin-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <div class="footer-widget">
+                                <h3 class="aboutus">About Us</h3>
+                            </div>
+                        </div>
+                        <ul class="footer-widget__aboutus">
+                            <li>8st, Ton That Thuyet Street, Nam Tu Liem District, Ha Noi </li>
+                            <li>Phone: +84 912.345.678</li>
+                            <li> Email:thidk@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li><a href="">Customer</a></li>
+                            <li><a href="">Serivius</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Shoping Cart</a></li>
+                            <li><a href="">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h3>Join Our Newletter Now</h3>
+                        <p>Get E-mail updates about our latest shop and special offers</p>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your email">
+                            <button type="button">Subscribe</button>
+                        </form>
+                        <div class="footer-left">
+                            <div class="footer-social">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright-reserved">
+            <div class="copyright-text">
+                &copy;2022 Team 6 - T2205E
+            </div>
+            <div class="payment-pic">
+                <img src="./assets/img/payment-method.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

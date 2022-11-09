@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE HISTORY</title>
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="./assets/script.js"></script>
+</head>
+
+<body>
+    <!-- Phan header-->
+    <nav class="navbar navbar-default navbar-fixed-top header">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand header-logo" href="index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="EAST.html">EAST</a></li>
+                    <li><a href="west.html">WEST</a></li>
+                    <li><a href="north.html">NORTH</a></li>
+                    <li><a href="south.html">SOUTH</a></li>
+                    <li><a href="central.html">CENTRAL</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="booktour.html">Book Tour</a></li>
+                            <li><a href="hottour.html">Hot Tour</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar-right flex items-center">
+                    <div id="search-input" class="flex h-full justify-end items-center none">
+                        <div class="relative mr-20">
+                            <input class="input-search" placeholder="Search" onkeyup="handleSearch(event)" />
+                            <div class="search-suggest none">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-btn" onclick="handleShowSearch()">
+                        <!-- <i class=" search-icon ti-search"></i> -->
+                        <i class="search-icon fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="container">
+        <h3 class="content__hottour">
+            Hot Tour on November
+            <i class="fa-solid fa-arrow-right ti-check4"></i>
+            Up sale 15% 
+            <i class="fa-solid fa-arrow-right ti-check4"></i>
+            <a href="booktour.html">Book Tour Now</a>
+        </h3>
+        <div class= "row mt-10">
+           <div class ="col-4 col-sm-6 col-md-4 image image-1 ">
+              <div class="item">
+                 <img src="./assets/img/images-East/img-vanlytruongthanh/vanlytruongthanh1.jpg" alt="" class="kyquan1">
+                 <h3>The Great Wall of China </h3>
+                 <p>The facts about the Great Wall of China, the most mysterious 'Wall' of mankind. </p>
+                 <div style="text-align: right;">
+                    <a href="The Great Wall of China.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image image-1 ">
+              <div class="item">
+                 <img src="./assets/img/Japan/japan1.jpg" alt="" class="kyquan1">
+                 <h3>Itsukushima Shline</h3>
+                 <p>Itsukushima Shinto Shrine - World Cultural and Historical Heritage in Japan.</p>
+                 <div style="text-align: right;">
+                    <a href="Itsukushima Shline of Japan.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image image-1 ">
+              <div class="item">
+                 <img src="./assets/img/image-Turtle Tower/Thap_Rua.jpg" alt="" class="kyquan1">
+                 <h3>Turtle Tower</h3>
+                 <p>Turtle Tower - a highlight of Hanoi-Vietnam's long-standing historical culture</p>
+                 <div style="text-align: right;">
+                    <a href="Turtle Tower-VietNam.html"style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image  ">
+              <div class="item">
+                 <img src="./assets/img/image-Lao/Champasak,_Laos,_Wat_Poo_03.jpg" alt="" class="kyquan1">
+                 <h3>Vat Phou</h3>
+                 <p>Wat Phou is the oldest temple in Laos, once the center of Hinduism, worshiping the god Shiva. </p>
+                 <div style="text-align: right;">
+                    <a href="Vat Phou-LAO.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image ">
+              <div class="item">
+                 <img src="./assets/img/image-china/The_Forbidden_City_-_View_from_Coal_Hill.jpg" alt="" class="kyquan1">
+                 <h3>Forbidden City</h3>
+                 <p>Forbidden City - The magnificent, mysterious and famous Palace of China.</p>
+                 <div style="text-align: right;">
+                    <a href="Forbidden City of China.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <div class ="col-4 col-sm-6 col-md-4 image  ">
+              <div class="item">
+                 <img src="./assets/img/image-Korean/Korea-Seoul-Changdeokgung-Injeongjeon-03.jpg" alt="" class="kyquan1">
+                 <h3>Changdeokgung</h3>
+                 <p>Changdeokgung is a palace located in a large park of Seoul, South Korea</p>
+                 <div style="text-align: right;">
+                    <a href="Changdeokgung-KOREAN.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div>
+           <!-- <div class ="col-4 col-sm-6 col-md-4 image ">
+              <div class="item">
+                 <img src="./assets/img/kyquan1.jpg" alt="" class="kyquan1">
+                 <h3>ky quan 1</h3>
+                 <p>Đây là kỳ quan 1 nổi tiếng Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, et?</p>
+                 <div style="text-align: right;">
+                    <a href="EAST.html" style="display: inline-block;" class=" view-information">VIEW DETAIL</a>
+                 </div>
+              </div>
+           </div> -->
+           
+        </div>
+      </div>
+    <!--Footer Section Begin-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <div class="footer-widget">
+                                <h3 class="aboutus">About Us</h3>
+                            </div>
+                        </div>
+                        <ul class="footer-widget__aboutus">
+                            <li>8st, Ton That Thuyet Street, Nam Tu Liem District, Ha Noi </li>
+                            <li>Phone: +84 912.345.678</li>
+                            <li> Email:thidk@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li><a href="">Customer</a></li>
+                            <li><a href="">Serivius</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Shoping Cart</a></li>
+                            <li><a href="">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h3>Join Our Newletter Now</h3>
+                        <p>Get E-mail updates about our latest shop and special offers</p>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your email">
+                            <button type="button">Subscribe</button>
+                        </form>
+                        <div class="footer-left">
+                            <div class="footer-social">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright-reserved">
+            <div class="copyright-text">
+                &copy;2022 Team 6 - T2205E
+            </div>
+            <div class="payment-pic">
+                <img src="./assets/img/payment-method.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

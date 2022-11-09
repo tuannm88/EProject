@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE HISTORY</title>
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="./assets/script.js"></script>
+</head>
+
+<body>
+    <!-- Phan header-->
+    <nav class="navbar navbar-default navbar-fixed-top header">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand header-logo" href="index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="EAST.html">EAST</a></li>
+                    <li><a href="west.html">WEST</a></li>
+                    <li><a href="north.html">NORTH</a></li>
+                    <li><a href="south.html">SOUTH</a></li>
+                    <li><a href="central.html">CENTRAL</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="booktour.html">Book Tour</a></li>
+                            <li><a href="hottour.html">Hot Tour</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar-right flex items-center">
+                    <div id="search-input" class="flex h-full justify-end items-center none">
+                        <div class="relative mr-20">
+                            <input class="input-search" placeholder="Search" onkeyup="handleSearch(event)" />
+                            <div class="search-suggest none">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-btn" onclick="handleShowSearch()">
+                        <!-- <i class=" search-icon ti-search"></i> -->
+                        <i class="search-icon fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+    </nav>
+    <!-- register form -->
+    <div class="auth-form">
+        <div class="auth-form__container">
+             <div class="auth-form__header">
+            <h3 class="auth-form__heading">Book Tour</h3>
+            </div>
+            <div class="auth-form__form">
+                <div class="auth-form__group">
+                     <input type="text" class="auth-form__input" placeholder="Họ và tên của bạn">
+                 </div>
+                 <div class="auth-form__group">
+                     <input type="password" class="auth-form__input" placeholder="Số điện thoại">
+                </div>
+                 <div class="auth-form__group">
+                     <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                 </div>
+                 <div class="auth-form__group">
+                    <input type="text" class="auth-form__input" placeholder="Nhập địa chỉ bạn muốn thăm">
+                </div>
+                <div class="auth-form__group ">
+                    <input type="text" class="auth-form__input auth-form__input1" placeholder="Thêm thông tin bạn cần">
+                </div>
+             </div>
+             <div class="auth-form__aside">
+                 <p class="auth-form__policy-text">
+                     Bằng việc đăng kí, bạn đã đồng ý với chúng tôi về
+                    <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                     <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                 </p>
+            </div>
+            <div class="auth-form__controls">
+                 <button class="btn btn&#45;&#45;primary">SUBMIT</button>
+            </div>
+    </div>
+    <div class="auth-form__socials">
+        <a href="" class=" auth-form__socials&#45;&#45;facebook btn btn&#45;&#45;size-s btn&#45;&#45;with-icon">
+            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+            <span class="auth-form__socials&#45;&#45;title">
+                Kết nối với facebook
+            </span>
+        </a>
+        <a href="" class="auth-form__socials&#45;&#45;google btn btn&#45;&#45;size-s btn&#45;&#45;with-icon">
+            <i class="auth-form__socials-icon fab fa-google"></i>
+            <span class="auth-form__socials&#45;&#45;title">
+                Kết nối với Google
+            </span>
+        </a>
+    </div>
+</div>
+    </div>
+
+    <!--Footer Section Begin-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <div class="footer-widget">
+                                <h3 class="aboutus">About Us</h3>
+                            </div>
+                        </div>
+                        <ul class="footer-widget__aboutus">
+                            <li>8st, Ton That Thuyet Street, Nam Tu Liem District, Ha Noi  </li>
+                            <li>Phone: +84 912.345.678</li>
+                            <li> Email:thidk@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li><a href="">Customer</a></li>
+                            <li><a href="">Serivius</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Shoping Cart</a></li>
+                            <li><a href="">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h3>Join Our Newletter Now</h3>
+                        <p>Get E-mail updates about our latest shop and special offers</p>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your email">
+                            <button type="button">Subscribe</button>
+                        </form>
+                        <div class="footer-left">
+                            <div class="footer-social">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright-reserved">
+            <div class="copyright-text">
+                &copy;2022 Team 6 - T2205E
+            </div>
+            <div class="payment-pic">
+                <img src="./assets/img/payment-method.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
